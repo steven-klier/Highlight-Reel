@@ -1,0 +1,89 @@
+@charset "utf-8";
+body{
+    background-image: url("images/compressjpeg/20180330_ROAK_KFest114114-min.jpg"), url("images/compressjpeg/kfest-min.jpg");
+	background-repeat:no-repeat, repeat;
+    background-size: cover;
+    
+}
+
+.highlight_reel{
+    color: rgba(255,255,255,1.00);
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: 4em;
+    margin-left: 40px;
+    margin-top: 35px;
+	display:inline;
+}
+
+.navbar{
+	display:block;
+	float:left;
+	margin-top: 3%;
+}
+
+.home{
+	margin:auto;
+}
+
+.rounded{
+    width: 55%;
+	min-width: 420px;
+	margin-top:5%;
+	margin-right: 20%;	
+}
+
+.nav-link{
+    font-size: large;
+}
+
+.video_container{
+    max-width: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+	margin-bottom: 50px;
+}
+.embed-responsive{
+    displayer: inline-block;
+    margin: auto;
+}
+
+.navbar2{
+	float:none;
+	margin-top: 0px;
+}
+
+.contact_form{
+	max-width: 70%;	
+	display:block;
+	margin:auto;
+}
+
+.col-md-4{
+	overflow: hidden;
+}
+
+.t-shirt{
+    display: block;
+    margin: 20px auto 20px;
+    width: 550px;
+    border-radius: 36px;
+    -webkit-box-shadow: 0px 0px 23px 12px;
+    box-shadow: 0px 0px 23px 12px;
+}
+
+td{
+    color: rgba(255,255,255,1.00);
+    font-size: large;
+}
+
+.table{
+    background-color: rgba(29,29,29,1.00);
+    -webkit-box-shadow: 5px 0px 87px 22px;
+    box-shadow: 5px 0px 87px 22px;
+    border: thin solid rgba(255,255,255,1.00);
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+
+

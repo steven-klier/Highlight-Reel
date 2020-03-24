@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Highlight Reel</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- external javascript-->
+
+<style>
+	ul{
+		background-color:black;
+	}
+	
+	a{
+		color:white;
+		font-size: 16px;
+	}
+	.nav-item a:hover{
+		border-style: solid;
+		border-width: 1px;
+		border-color:aliceblue;
+	}
+	
+	a:hover{
+		color:white;
+		font-size:15px;
+	}
+	ul{
+		list-style: none;
+	}
+	
+	#music{
+		position: relative;
+	}
+	
+	.drop{
+		background-color:black;
+		color:white;
+		position: absolute;
+		bottom: -45px;
+		display:none;
+		
+	}
+	
+	#video{
+		position:relative;
+	}
+	
+	.drop2{
+		background-color:black;
+		color:white;
+		position: absolute;
+		bottom: -45px;
+		display:none;
+		
+	}
+</style>
+	
+<script>
+	$("document").ready(function(){
+		$("#music").mouseover(function(){
+			$(".drop").show("fast");
+		});
+		$('.drop').mouseleave(function(){
+			$(this).hide("fast");
+		});
+		$("#video, #contact, #photo, #merch, #gigs, #home").mouseenter(function(){
+			$(".drop").hide("fast");
+		});
+		$("#video").mouseover(function(){
+			$(".drop2").show("fast");
+		});
+		$('.drop2').mouseleave(function(){
+			$(this).hide("fast");
+		});
+		$("#music, #contact, #photo, #merch, #gigs, #home").mouseenter(function(){
+			$(".drop2").hide("fast");
+		});
+	});
+</script>
+</head>
+
+<body>
+	
+	<div>
+		<h1 class="highlight_reel display-1">HIGHLIGHT REEL</h1>
+	</div>
+	
+<nav class="mt-0">
+	<ul class="navbar nav-justified col-12 mt-0">
+		<li class="nav-item">
+			<a href="index.html" id="home" class="nav-link">HOME</a>
+		</li>
+		<li class="nav-item">
+			<a href="music_videos.html" id="video" class="nav-link">MUSIC VIDEOS</a>
+			
+				<ul class="drop2 nav rounded p-0 container-fluid col-3">
+					<li>
+						<a href="https://www.youtube.com/watch?v=7-Sk-wgIW3U" class="nav-link float-left" target="_blank">Wires</a>
+					</li>
+					
+					<li>
+						<a href="https://www.youtube.com/watch?v=y7-ggh0i_fE" class="nav-link float-left" target="_blank">The Truth Seeker</a>
+					</li>
+					
+				</ul>
+		</li>
+		
+		<li class="nav-item">
+			<a href="music.html" id="music" class="nav-link">MUSIC</a>
+				
+				<ul class="drop nav rounded p-0 container-fluid col-5">
+					<li>
+						<a href="https://highlightreelmi.bandcamp.com/album/truth-seeker" class="nav-link float-left" target="_blank">Truth Seeker</a>
+					</li>
+					
+					<li>
+						<a href="https://highlightreelmi.bandcamp.com/album/so-this-is-goodbye" class="nav-link float-left" target="_blank">So This is Goodbye</a>
+					</li>
+					
+					<li>
+						<a href="https://highlightreelmi.bandcamp.com/track/the-blues" class="nav-link float-left" target="_blank">The Blues</a>
+					</li>
+				</ul>
+			
+		</li>
+		
+		<li class="nav-item">
+			<a href="contact.html" id="contact" class="nav-link">CONTACT</a>
+		</li>
+		<li class="nav-item">
+			<a href="photo.html" id="photo" class="nav-link">PHOTO GALLERY</a>
+		</li>
+		<li class="nav-item">
+			<a href="gigs.html" id="gigs" class="nav-link">GIGS</a>
+		</li>
+	</ul>	
+</nav>
+	
+
+	
+	<div class="container home">
+		
+		<a href="https://highlightreelmi.bandcamp.com/album/truth-seeker" target="_blank">
+			<img src="styles/images/compressjpeg/cover-min.jpg" class="rounded float-right" alt="truth seeker">
+		</a>	
+		
+	</div>
+
+</body>
+</html>
